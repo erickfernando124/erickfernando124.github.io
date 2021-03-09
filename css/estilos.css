@@ -1,0 +1,354 @@
+*{box-sizing:border-box;}
+
+@font-face {
+    font-family:'sans-light';
+    src:url('../fonts/fuentes/SourceSansPro-Light.ttf');
+}
+@font-face {
+    font-family:'sans-regular';
+    src:url('../fonts/fuentes/SourceSansPro-Regular.ttf');
+}
+
+body {
+    font-family:sans-light;
+}
+
+header {
+    width:100%;
+}
+
+.redes-sociales {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    background:#fff;
+}
+
+.redes-sociales .autor {
+    padding-left:5px;
+}
+
+.redes-sociales .margin{
+    font-size:17px;
+}
+
+.redes-sociales .redes a{
+    font-size:20px;
+    margin-right:20px;
+    color:#000;
+    padding:10px;
+}
+
+.redes-sociales .redes .facebook:hover {
+    background:#3b5998;
+    color:#fff;
+}
+
+.redes-sociales .redes .twitter:hover{
+    background: #00acee;
+    color:#fff;
+}
+
+.redes-sociales .redes .instagram:hover {
+    background:#E1306C;
+    color:#fff;
+}
+
+
+/*menu*/
+.contenedor-menu {
+    width:100%;
+    background:#000;
+}
+
+.contenedor-menu .menu {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+
+}
+
+.contenedor-menu .menu a{
+    padding:30px;
+    color:#fff;
+    text-decoration:none;
+    margin-right:35px;
+}
+.contenedor-menu .menu a:hover {
+    text-decoration:underline;
+}
+
+/*contenedor-presentacion*/
+
+.contenedor-presentacion{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    margin:auto;
+    margin-bottom:10px;
+}
+
+.presentacion{
+    width:30%;
+    margin:auto;
+}
+
+.presentacion p {
+    font-size:40px;
+    text-align:center;
+    margin:10px;
+}
+
+.imagen {
+    width:60%;
+    margin: auto;
+}
+
+.imagen img{
+    width:100%;
+    vertical-align:top;
+}
+
+/*contenedor-inicio*/
+
+.contenedor-inicio {
+    width:100%;
+    background:#000;
+    color:#fff;
+    padding:20px;
+    margin:auto;
+}
+
+.contenedor-inicio .inicio {
+    width:100;
+    margin:auto;
+    line-height:24px;
+}
+
+.contenedor-inicio .inicio h2 {
+    width:100%;
+    text-align: center;
+    font-size:20px;
+}
+.contenedor-inicio .inicio{
+    width:60%;
+    text-align:center;
+    font-family:sans-light;
+}
+
+/*contenedor servicio*/
+
+.contenedor-servicios {
+    width:100%;
+}
+
+.contenedor-servicios .contenedor.padre{
+    width:100%;
+}
+
+.contenedor-servicios .contenedor-hijo{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+.contenedor-servicios .contenedor-hijo .hijo{
+    width:100%;
+    max-width:400px;
+    margin:10px;
+    color:#000;
+    text-align: center;
+    font-size:17px;
+}
+
+.contenedor-servicios .contenedor-hijo .hijo .contenedor-imagen{
+    width:100%;
+}
+
+.contenedor-servicios .contenedor-hijo .hijo .contenedor-imagen img {
+    width:100%;
+}
+
+.contenedor-servicios .contenedor-hijo .hijo .contenedor-imagen p{
+    text-align:center;
+}
+
+.contenedor-servicios .contenedor-hijo .hijo .contenedor-imagen .boton {
+    display:flex;
+    justify-content:center;
+}
+
+.contenedor-servicios .contenedor-hijo .hijo .contenedor-imagen .boton input{
+    padding:10px 20px;
+    border:1px solid rgba(0,0,0,0.5);
+    border-radius:10px;
+    outline:none;
+    cursor:pointer;
+}
+
+.contenedor-servicios .contenedor-hijo .hijo .contenedor-imagen .boton input:hover{
+    background:#000;
+    color:#fff;
+}
+
+/*footer*/
+footer {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+footer .despedida{
+    width:100%;
+    text-align:center;
+    font-size:50px;
+    background:#fff;
+    color:#000;
+    padding-top:60px;
+}
+
+footer .contacto {
+    width:100%;display:flex;
+    justify-content:center;
+}
+
+footer .formulario {
+    width:50%;
+    margin:15px;
+    background:#000;
+    padding:20px;
+    text-align: center;
+}
+
+footer .formulario input[type="text"],
+input[type="email"],
+textarea
+{
+    width:100%;
+    display:block;
+    margin-bottom:20px;
+    padding:10px 20px;
+    border:1px solid rgba(0,0,0,0.5);
+    outline:none;
+    background:#000;
+    border-bottom:1px solid #fff;
+    color:#fff;
+}
+
+footer .formulario input[type="text"]{
+    margin-right:10px;
+}
+
+footer .formulario textarea{
+    width:100%;
+    max-width:100%;
+    min-width:100%;
+    min-height:100px;
+    max-height:200px;
+
+}
+
+footer .formulario input[type="submit"]{
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+@media screen and (max-width:1000px){
+    footer .formulario {
+        width:70%;
+    }
+}
+
+@media screen and (max-width:850px){
+
+    .redes-sociales {
+        flex-direction:column;
+        justify-content:center;
+        text-align: center;
+    }
+    header .autor{
+        order:2;
+        width:100%;
+    }
+
+    header .redes{
+        order:100%;
+        width:100%;
+    }
+
+    .contenedor-presentacion .presentacion p{
+        font-size:30px;
+    }
+
+    .contenedor-menu .menu {
+        justify-content:center;
+        flex-direction:row;
+    }
+
+    .contenedor-menu .menu a{
+        margin-right:10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .contenedor-presentacion .presentacion p{
+        font-size:20px;
+    }
+
+    .contenedor-servicios .contenedor-hijo {
+        flex-direction: column;
+    }
+    .contenedor-servicios .contenedor-hijo .hijo{
+        width:80%;
+        margin:10px;
+        display:flex;
+        justify-content:center;
+    }
+    .contenedor-servicios .contenedor-hijo .hijo .contenedor-imagen {
+        width:100%;
+    }
+    .contenedor-servicios .contenedor-hijo .hijo .contenedor-imagen img{
+        width:100%;
+    }
+
+    footer .despedida {
+        font-size:30px;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .contenedor-menu .menu {
+        flex-direction: column;
+        text-align: center;
+        padding:5px;
+    }
+
+    .contenedor-presentacion .presentacion p{
+        font-size:16px;
+    }
+
+    .contenedor-inicio .inicio h2{
+        font-size:17px;
+    }
+
+    .contenedor-inicio .inicio p{
+        font-size:14px;
+    }
+
+    footer .despedida {
+        font-size:20px;
+    }
+
+    footer .formulario {
+        width:90%;
+    }
+}
