@@ -1,5 +1,10 @@
 *{box-sizing:border-box;}
 
+*::selection {
+    background-color: #E1D8CF;
+    color: #683C11;
+}
+
 @font-face {
     font-family:'sans-light';
     src:url('../fonts/fuentes/SourceSansPro-Light.ttf');
@@ -9,8 +14,17 @@
     src:url('../fonts/fuentes/SourceSansPro-Regular.ttf');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family:sans-light;
+}
+
+body::selection{
+    background:#fff;
+    color:#000;
 }
 
 header {
@@ -144,6 +158,8 @@ header {
 
 .contenedor-servicios {
     width:100%;
+    border-bottom:2px solid #000;
+    padding:20px 0 30px 0;
 }
 
 .contenedor-servicios .contenedor.padre{
@@ -155,12 +171,11 @@ header {
     display:flex;
     flex-direction:row;
     justify-content:space-around;
+    margin-top:10px;
 }
 
 .contenedor-servicios .contenedor-hijo .hijo{
-    width:100%;
-    max-width:400px;
-    margin:10px;
+    width:40%;
     color:#000;
     text-align: center;
     font-size:17px;
@@ -305,18 +320,21 @@ footer .formulario input[type="submit"]{
 
     .contenedor-servicios .contenedor-hijo {
         flex-direction: column;
+        justify-content:center;
+        align-items:center;
     }
     .contenedor-servicios .contenedor-hijo .hijo{
         width:80%;
         margin:10px;
-        display:flex;
-        justify-content:center;
     }
     .contenedor-servicios .contenedor-hijo .hijo .contenedor-imagen {
         width:100%;
     }
     .contenedor-servicios .contenedor-hijo .hijo .contenedor-imagen img{
         width:100%;
+    }
+    .contenedor-servicios .contenedor-hijo .hijo .contenedor-imagen .boton input{
+        padding:10px 10px;
     }
 
     footer .despedida {
@@ -326,6 +344,9 @@ footer .formulario input[type="submit"]{
 
 @media screen and (max-width:400px) {
 
+    header {
+        position:static;
+    }
     .contenedor-menu .menu {
         flex-direction: column;
         text-align: center;
@@ -334,6 +355,7 @@ footer .formulario input[type="submit"]{
 
     .contenedor-presentacion .presentacion p{
         font-size:16px;
+        align-items:center;
     }
 
     .contenedor-inicio .inicio h2{
