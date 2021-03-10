@@ -378,7 +378,7 @@ footer .formulario input[type="submit"]{
 /*efectos menu*/
 
 .headroom {
-    transition: transform .3s ease;
+    transition: transform 1.5s ease;
 }
 
 .headroom--pinned {
