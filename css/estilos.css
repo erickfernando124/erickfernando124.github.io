@@ -218,6 +218,7 @@ footer {
     flex-direction:row;
     flex-wrap: wrap;
     justify-content:space-between;
+    padding:10px;
 }
 
 footer .despedida{
@@ -229,13 +230,24 @@ footer .despedida{
     padding-top:60px;
 }
 
+footer .imagen-formulario{
+    width:50%
+}
+footer .imagen-formulario div{
+    width:100%;
+}
+footer .imagen-formulario div img {
+    width:100%;
+}
+
 footer .contacto {
-    width:100%;display:flex;
+    width:50%;
+    display:flex;
     justify-content:center;
 }
 
 footer .formulario {
-    width:50%;
+    width:100%;
     margin:15px;
     background:#000;
     padding:20px;
@@ -278,6 +290,19 @@ footer .formulario input[type="submit"]{
 @media screen and (max-width:1000px){
     footer .formulario {
         width:70%;
+    }
+
+    footer .imagen-formulario {
+        width:100%;
+    }
+    footer .imagen-formulario div {
+        width:100%;
+    }
+    footer .imagen-formulario div img{
+        width:100%;
+    }
+    footer .contacto{
+        width:100%;
     }
 }
 
